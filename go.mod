@@ -1,4 +1,4 @@
-module Go_Restful_API_Service
+module go-restful-api-service
 
 go 1.20
 
