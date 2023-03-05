@@ -51,8 +51,8 @@ func FileHandler(w http.ResponseWriter, r *http.Request) {
 			w.Write(content)
 			return
 		}
-
-		http.ServeFile(w, r, "../../static/404.html")
+		println("File path is invalid")
+		http.ServeFile(w, r, "static/404.html")
 		return
 	}
 

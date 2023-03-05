@@ -6,8 +6,8 @@ import (
 )
 
 func NotFoundHandler(w http.ResponseWriter, r *http.Request) {
-	println("Visitor use wrong url")
-	html, err := ioutil.ReadFile("../../static/404.html")
+	println("Visitor visits wrong url")
+	html, err := ioutil.ReadFile("static/404.html")
 	if err != nil {
 		http.Error(w, "Failed to read file", http.StatusInternalServerError)
 		return

@@ -6,7 +6,7 @@ import (
 )
 
 func CssHandler(w http.ResponseWriter, r *http.Request) {
-	css, err := ioutil.ReadFile("../../static/404.css")
+	css, err := ioutil.ReadFile("static/404.css")
 	if err != nil {
 		http.Error(w, "Failed to read file", http.StatusInternalServerError)
 		return
